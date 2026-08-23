@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScanBuddy OBD2 - Privacy Policy</title>
+<meta name="description" content="What ScanBuddy OBD2 does with your information.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #f6f8f7;
+    --text: #10181f;
+    --muted: #4a5560;
+    --line: #d8e0dc;
+    --accent: #0f7a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116;
+      --surface: #161b22;
+      --text: #e6edf3;
+      --muted: #9aa6b2;
+      --line: #2a323b;
+      --accent: #4ade80;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 10px; padding-top: 4px; }
+  h3 { font-size: 1.08rem; margin: 28px 0 8px; color: var(--accent); }
+  p, li { color: var(--muted); }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+  code {
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+  }
+  hr { margin: 36px 0; border: 0; border-top: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { padding: 10px 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+  th { background: var(--surface); color: var(--text); }
+  td { color: var(--muted); }
+  /* A wide table must scroll inside itself, never push the page sideways. */
+  .table-wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+<h1 id="scanbuddy-obd2-privacy-policy" class="chapter-title">ScanBuddy OBD2 Privacy Policy</h1>
+<p><strong>Last updated: 23 August 2026</strong></p>
+<p>ScanBuddy is an OBD2 scan tool for Android. It reads what your vehicle has already recorded — the check engine light, readiness monitors, trouble codes, and live sensor values — and shows it to you.</p>
+<p>ScanBuddy has no account, no sign-in, and no server of its own. Your scans are stored on your phone.</p>
+<p>Four things can leave your phone, all described below. One of them you can switch off. The other three happen only when you tap a button that says so.</p>
+<div class="page-break"></div>
+<h2 id="what-stays-on-your-phone">What stays on your phone</h2>
+<p>Everything ScanBuddy records lives in your phone's app storage and is not sent anywhere:</p>
+<ul><li><strong>Saved scans</strong> — vehicle details, trouble codes, readiness monitors, live readings, and the time of the scan.</li><li><strong>Your settings</strong> — language, appearance, units, and your privacy choices.</li><li><strong>A vehicle-name cache</strong>, so the same vehicle is not looked up twice. It is stored under a one-way digest rather than the VIN itself, and the stored entry does not contain the VIN.</li></ul>
+<ul><li><strong>Scan logs</strong> — a short record of the last five scans, described in section 4 below.</li></ul>
+<p>Uninstalling the app removes all of it. You can also erase it at any time from <strong>More → Clear saved reports</strong>, which clears the saved scans, the vehicle-name cache and the scan logs together.</p>
+<div class="page-break"></div>
+<h2 id="what-can-leave-your-phone">What can leave your phone</h2>
+<h3 id="1-your-vin-sent-to-nhtsa-to-get-the-vehicle-s-name">1. Your VIN, sent to NHTSA, to get the vehicle's name</h3>
+<p>When a vehicle reports its VIN, ScanBuddy can send that VIN to the United States National Highway Traffic Safety Administration's public vehicle database in order to display the year, make and model:</p>
+<p><code>https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/</code></p>
+<p>Only the VIN is sent. No other scan data goes with it, and nothing identifies you or your phone.</p>
+<p><strong>This is on by default and you can switch it off</strong> at <strong>More → Vehicle info lookup</strong>. With it off, no VIN ever leaves your phone, and ScanBuddy shows whatever name the vehicle itself reported.</p>
+<p>NHTSA is a US government agency and its handling of that request is governed by its own policies, not by this one.</p>
+<h3 id="2-a-web-search-when-you-tap-a-button-that-asks-for-one">2. A web search, when you tap a button that asks for one</h3>
+<p>Several screens offer a <strong>&quot;Look up&quot;</strong> button — beside a trouble code, beside a readiness monitor, and beside a live gauge. Tapping it opens a web search in your browser. Each one says so underneath, in words like &quot;Opens a search about this vehicle's monitors&quot;.</p>
+<p>That search contains the trouble code, monitor or gauge you tapped, along with the vehicle's year, make, model, engine and connection type, and whether the check engine light is on. <strong>Your VIN is never included in that search.</strong></p>
+<p>Nothing is sent until you tap. If you never tap one of those buttons, no search is ever made.</p>
+<h3 id="3-anything-you-choose-to-share">3. Anything you choose to share</h3>
+<p>The share button builds a report — as text, a picture, or both — and hands it to Android's share sheet. You choose where it goes; ScanBuddy does not send it anywhere itself.</p>
+<p><strong>VINs are masked in shared reports by default</strong> (<code>ABC**********1234</code>). You can change that at <strong>More → VIN privacy</strong>, and the setting applies to both the text and the picture.</p>
+<h3 id="4-diagnostic-data-if-you-attach-it-to-a-problem-report">4. Diagnostic data, if you attach it to a problem report</h3>
+<p>ScanBuddy keeps a short log of each of your <strong>last five scans</strong> — the commands it sent to your OBD2 adapter and what came back, plus how the connection went. These logs stay on your phone and are never sent on their own.</p>
+<p>When you tap <strong>More → Report a problem</strong>, ScanBuddy asks whether you want to send them. You can attach the last scan, attach the last few, or choose <strong>&quot;Just write a message&quot;</strong>, which attaches no scan logs at all. It asks every time; there is no setting that remembers a yes.</p>
+<p>Whichever you choose, the email itself carries five lines so a reply can make sense of it: your app version, your phone model, your vehicle's year, make and model, whether the adapter connected, and any trouble codes. You can delete those lines before sending.</p>
+<p>If you do attach them, they are gathered into a single text file that you can open and read, and an email is opened for you, addressed to the support address below, with that file attached. <strong>Nothing is sent until you send it.</strong> You pick which email app to use, you can read or delete the attachment first, and you can close the email without sending.</p>
+<p>The file contains your app version, your phone model, what the vehicle reported about itself, which adapter you used, and those scan logs. <strong>It does not contain your VIN</strong>, your name, your email, or your location. VINs are removed as the logs are written and again as the file is built.</p>
+<p><strong>Why it is asked for:</strong> ScanBuddy has been tested against a small number of OBD2 adapters, and there are hundreds of different ones for sale. A log of what your adapter actually did is the only reliable way to fix a problem on hardware the developer does not own.</p>
+<p><strong>Deleting them:</strong> the scan logs are erased along with everything else at <strong>More → Clear saved reports</strong>, and the app only ever keeps the last five.</p>
+<div class="page-break"></div>
+<h2 id="what-scanbuddy-does-not-do">What ScanBuddy does not do</h2>
+<ul><li><strong>No account and no sign-in.</strong> There is nothing to register.</li><li><strong>No analytics.</strong> No usage statistics, no event tracking, no session recording.</li><li><strong>No crash reporting.</strong> Nothing is sent when the app fails.</li><li><strong>No advertising.</strong> ScanBuddy contains no advertising SDK, shows no ads, and requests no advertising identifier. An advertising component was removed in August 2026 and no part of it remains.</li><li><strong>No location.</strong> ScanBuddy does not request location permission and does not use location. Its Bluetooth scanning is declared as never being used to derive location.</li><li><strong>No selling or sharing of personal information.</strong> There is no recipient to sell it to.</li></ul>
+<div class="page-break"></div>
+<h2 id="permissions-and-what-each-is-for">Permissions, and what each is for</h2>
+<table><thead><tr><th>Permission</th><th>Why</th></tr></thead><tbody><tr><td>Bluetooth (connect and scan)</td><td>To find and talk to your OBD2 adapter. Declared as never used for location</td></tr><tr><td>Internet</td><td>The NHTSA vehicle-name lookup, and a search you tap. Attachments are handed to another app, not uploaded by ScanBuddy</td></tr><tr><td>Notifications</td><td>To show scan progress and alerts</td></tr><tr><td>Vibrate</td><td>Button feedback and alerts</td></tr><tr><td>Wake lock</td><td>To keep a scan running while it finishes</td></tr></tbody></table>
+<p>ScanBuddy asks for no other permissions.</p>
+<div class="page-break"></div>
+<h2 id="children">Children</h2>
+<p>ScanBuddy is a vehicle tool and is not directed at children. It does not knowingly collect information from anyone, of any age.</p>
+<div class="page-break"></div>
+<h2 id="changes-to-this-policy">Changes to this policy</h2>
+<p>If what the app does changes, this page changes with it, and the date at the top moves. The version of this policy that applies to you is the one published here.</p>
+<div class="page-break"></div>
+<h2 id="contact">Contact</h2>
+<p>Questions, corrections, or a request about your data:</p>
+<p><strong>scanbuddy.obd@gmail.com</strong></p>
+<p>Because ScanBuddy holds nothing about you on any server, a deletion request is answered by telling you how to clear it from your own phone — <strong>More → Clear saved reports</strong>, or uninstalling the app.</p>
+<p>If you have already emailed a problem report with diagnostic data attached and want it deleted, say so at the address above and it will be deleted from that inbox.</p>
+</main>
+</body>
+</html>
