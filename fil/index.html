@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="fil">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ScanBuddy OBD2 - Patakaran sa Privacy</title>
+<meta name="description" content="Ano ang ginagawa ng ScanBuddy OBD2 sa impormasyon mo.">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="pt-BR" href="../pt/">
+<link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/">
+<link rel="alternate" hreflang="fil" href="../fil/">
+<link rel="alternate" hreflang="vi" href="../vi/">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="ko" href="../ko/">
+<link rel="alternate" hreflang="hi" href="../hi/">
+<link rel="alternate" hreflang="ht" href="../ht/">
+<link rel="alternate" hreflang="id" href="../id/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="tr" href="../tr/">
+<link rel="alternate" hreflang="nl" href="../nl/">
+<link rel="alternate" hreflang="ja" href="../ja/">
+<link rel="alternate" hreflang="ru" href="../ru/">
+<link rel="alternate" hreflang="pl" href="../pl/">
+<link rel="alternate" hreflang="ro" href="../ro/">
+<link rel="alternate" hreflang="ms" href="../ms/">
+<link rel="alternate" hreflang="uk" href="../uk/">
+<link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/">
+<link rel="alternate" hreflang="cs" href="../cs/">
+<link rel="alternate" hreflang="th" href="../th/">
+<link rel="alternate" hreflang="fa" href="../fa/">
+<link rel="alternate" hreflang="ar" href="../ar/">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #f6f8f7;
+    --text: #10181f;
+    --muted: #4a5560;
+    --line: #d8e0dc;
+    --accent: #0f7a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116;
+      --surface: #161b22;
+      --text: #e6edf3;
+      --muted: #9aa6b2;
+      --line: #2a323b;
+      --accent: #4ade80;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 10px; padding-top: 4px; }
+  h3 { font-size: 1.08rem; margin: 28px 0 8px; color: var(--accent); }
+  p, li { color: var(--muted); }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+  code {
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+  }
+  hr { margin: 36px 0; border: 0; border-top: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { padding: 10px 12px; border: 1px solid var(--line); text-align: start; vertical-align: top; }
+  th { background: var(--surface); color: var(--text); }
+  td { color: var(--muted); }
+  /* A wide table must scroll inside itself, never push the page sideways. */
+  .table-wrap { overflow-x: auto; }
+  .langs { margin: 0 0 24px; font-size: 0.95rem; color: var(--muted); }
+  .langs span { color: var(--text); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Language"><a href="../" lang="en" hreflang="en">English</a> · <a href="../es/" lang="es" hreflang="es">Español</a> · <a href="../pt/" lang="pt-BR" hreflang="pt-BR">Português</a> · <a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> · <span aria-current="page">Filipino</span> · <a href="../vi/" lang="vi" hreflang="vi">Tiếng Việt</a> · <a href="../fr/" lang="fr" hreflang="fr">Français</a> · <a href="../ko/" lang="ko" hreflang="ko">한국어</a> · <a href="../hi/" lang="hi" hreflang="hi">हिन्दी</a> · <a href="../ht/" lang="ht" hreflang="ht">Kreyòl ayisyen</a> · <a href="../id/" lang="id" hreflang="id">Bahasa Indonesia</a> · <a href="../it/" lang="it" hreflang="it">Italiano</a> · <a href="../de/" lang="de" hreflang="de">Deutsch</a> · <a href="../tr/" lang="tr" hreflang="tr">Türkçe</a> · <a href="../nl/" lang="nl" hreflang="nl">Nederlands</a> · <a href="../ja/" lang="ja" hreflang="ja">日本語</a> · <a href="../ru/" lang="ru" hreflang="ru">Русский</a> · <a href="../pl/" lang="pl" hreflang="pl">Polski</a> · <a href="../ro/" lang="ro" hreflang="ro">Română</a> · <a href="../ms/" lang="ms" hreflang="ms">Bahasa Melayu</a> · <a href="../uk/" lang="uk" hreflang="uk">Українська</a> · <a href="../zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a> · <a href="../cs/" lang="cs" hreflang="cs">Čeština</a> · <a href="../th/" lang="th" hreflang="th">ไทย</a> · <a href="../fa/" lang="fa" hreflang="fa">فارسی</a> · <a href="../ar/" lang="ar" hreflang="ar">العربية</a></nav>
+<h1 id="patakaran-sa-privacy-ng-scanbuddy-obd2" class="chapter-title">Patakaran sa Privacy ng ScanBuddy OBD2</h1>
+<p><strong>Huling na-update: Oktubre 30, 2026</strong></p>
+<p><em>Ito ay isang salin. Kung may hindi pagkakatugma sa bersyong Ingles, ang bersyong Ingles ang masusunod.</em></p>
+<p>Ang ScanBuddy ay isang OBD2 scan tool para sa Android. Binabasa nito ang naitala na ng sasakyan mo — ang check engine light, ang mga emissions monitor, ang mga trouble code, at ang mga live na value ng mga sensor — at ipinapakita ito sa iyo.</p>
+<p>Walang account, walang sign-in, at walang sariling server ang ScanBuddy. Naka-save sa phone mo ang mga scan mo.</p>
+<p>Apat na bagay ang puwedeng lumabas sa phone mo, at lahat ay ipinaliliwanag sa ibaba. Ang isa sa mga ito ay puwede mong i-off. Ang tatlo pa ay nangyayari lang kapag nag-tap ka ng button na nagsasabi nito.</p>
+<div class="page-break"></div>
+<h2 id="ano-ang-nananatili-sa-phone-mo">Ano ang nananatili sa phone mo</h2>
+<p>Lahat ng itinatala ng ScanBuddy ay nasa app storage ng phone mo at hindi ipinapadala kahit saan:</p>
+<ul><li><strong>Mga naka-save na scan</strong> — mga detalye ng sasakyan, mga trouble code, mga emissions monitor, mga live na reading, at ang oras ng scan.</li><li><strong>Ang mga setting mo</strong> — wika, hitsura, mga unit, ang mga pinili mo sa privacy, at, kung itinakda mo ang mga ito, ang US state na ang emissions inspection ang gusto mong sagutin ng mga paliwanag at ang wikang gusto mo para sa mga paliwanag.</li><li><strong>Isang cache ng mga pangalan ng sasakyan</strong>, para hindi hanapin nang dalawang beses ang parehong sasakyan. Naka-save ito sa ilalim ng isang one-way digest sa halip na ang mismong VIN, at walang VIN sa naka-save na entry.</li><li><strong>Mga scan log</strong> — isang maikling tala ng huling limang scan, na ipinaliliwanag sa seksyon 4 sa ibaba.</li></ul>
+<p>Kapag in-uninstall mo ang app, mabubura ang lahat ng ito. Puwede mo rin itong burahin anumang oras sa <strong>Iba pa → I-clear ang mga naka-save na report</strong>, na sabay na nagbubura ng mga naka-save na scan, ng cache ng mga pangalan ng sasakyan, at ng mga scan log.</p>
+<div class="page-break"></div>
+<h2 id="ano-ang-puwedeng-lumabas-sa-phone-mo">Ano ang puwedeng lumabas sa phone mo</h2>
+<h3 id="1-ang-vin-mo-ipinapadala-sa-nhtsa-para-makuha-ang-pangalan-ng-sasakyan">1. Ang VIN mo, ipinapadala sa NHTSA, para makuha ang pangalan ng sasakyan</h3>
+<p>Kapag iniulat ng sasakyan ang VIN nito, puwedeng ipadala ng ScanBuddy ang VIN na iyon sa pampublikong vehicle database ng National Highway Traffic Safety Administration ng United States para maipakita ang taon, make at model:</p>
+<p><code>https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/</code></p>
+<p>VIN lang ang ipinapadala. Walang ibang data ng scan na kasama nito, at walang anumang nagpapakilala sa iyo o sa phone mo.</p>
+<p><strong>Kung ang region ng phone mo ay United States o isang teritoryo ng US, naka-on ito bilang default. Sa lahat ng ibang bansa, naka-off ito sa simula.</strong> Puwede mo itong i-on o i-off sa <strong>Iba pa → Paghahanap ng info ng sasakyan</strong>. Kapag naka-off ito, walang VIN na lalabas sa phone mo kailanman, at ipapakita ng ScanBuddy ang anumang pangalang iniulat mismo ng sasakyan.</p>
+<p>Ang NHTSA ay isang ahensya ng gobyerno ng US, at ang paghawak nito sa request na iyon ay sakop ng sarili nitong mga patakaran, hindi ng patakarang ito.</p>
+<h3 id="2-isang-web-search-kapag-nag-tap-ka-ng-button-para-dito">2. Isang web search, kapag nag-tap ka ng button para dito</h3>
+<p>May button na <strong>&quot;Hanapin&quot;</strong> sa ilang screen — sa tabi ng trouble code, sa tabi ng emissions monitor, at sa tabi ng live gauge. Kapag ni-tap mo ito, magbubukas ang isang web search sa browser mo. Sinasabi ito ng bawat isa sa ilalim, sa mga salitang tulad ng &quot;Magbubukas ng paghahanap tungkol sa mga monitor ng sasakyang ito&quot;.</p>
+<p>Laman ng search na iyon ang trouble code, monitor o gauge na ni-tap mo, kasama ang taon, make, model, makina at uri ng fuel ng sasakyan; ang iba pang trouble code at ang mga emissions monitor mula sa parehong scan; ang mga reading na naitala ng kotse nang ma-set ang code; ang layong tinakbo at ang mga warm-up cycle mula nang huling i-clear ang mga code; at kung naka-on ang check engine light. Kung nag-set ka ng inspection state o ng wika para sa mga paliwanag sa <strong>Iba pa</strong>, kasama rin ang mga iyon. <strong>Hindi kailanman isinasama ang VIN mo sa search na iyon.</strong></p>
+<p>Walang ipinapadala hangga't hindi ka nag-tap. Kung hindi ka kailanman mag-tap ng isa sa mga button na iyon, walang search na mangyayari kailanman.</p>
+<h3 id="3-anumang-pipiliin-mong-i-share">3. Anumang pipiliin mong i-share</h3>
+<p>Gumagawa ang share button ng report — bilang text, larawan, o pareho — at ibinibigay ito sa share sheet ng Android. Ikaw ang pipili kung saan ito pupunta; hindi ito ipinapadala ng ScanBuddy kahit saan nang mag-isa.</p>
+<p><strong>Naka-mask (nakatago) ang mga VIN sa mga ini-share na report bilang default</strong> (<code>ABC**********1234</code>). Puwede mo itong baguhin sa <strong>Iba pa → Privacy ng VIN</strong>, at sakop ng setting na iyon ang text at ang larawan.</p>
+<h3 id="4-diagnostic-data-kung-i-attach-mo-ito-sa-isang-ulat-ng-problema">4. Diagnostic data, kung i-attach mo ito sa isang ulat ng problema</h3>
+<p>Nagtatabi ang ScanBuddy ng maikling log ng bawat isa sa <strong>huling limang scan</strong> mo — ang mga command na ipinadala nito sa OBD2 adapter mo at ang bumalik na sagot, pati na kung kumusta ang koneksyon. Nananatili ang mga log na ito sa phone mo at hindi kailanman ipinapadala nang mag-isa.</p>
+<p>Kapag nag-tap ka sa <strong>Iba pa → Mag-report ng problema</strong>, tatanungin ka ng ScanBuddy kung gusto mong ipadala ang mga ito. Puwede mong i-attach ang huling scan, i-attach ang huling ilang scan, o piliin ang <strong>&quot;Sumulat lang ng mensahe&quot;</strong>, na walang ina-attach na kahit anong scan log. Nagtatanong ito sa bawat pagkakataon; walang setting na nakakaalala ng isang oo.</p>
+<p>Anuman ang piliin mo, may limang linya ang email mismo para maintindihan ito ng sasagot: ang bersyon ng app mo, ang model ng phone mo, ang taon, make at model ng sasakyan mo, kung nakakonekta ang adapter, at anumang trouble code. Puwede mong burahin ang mga linyang iyon bago ipadala.</p>
+<p>Kung i-attach mo ang mga ito, pagsasama-samahin ang mga ito sa iisang text file na puwede mong buksan at basahin, at bubuksan para sa iyo ang isang email, naka-address sa support address sa ibaba, na naka-attach ang file na iyon. <strong>Walang naipapadala hangga't hindi mo ito ipinapadala.</strong> Ikaw ang pipili kung aling email app ang gagamitin, puwede mo munang basahin o burahin ang attachment, at puwede mong isara ang email nang hindi ito ipinapadala.</p>
+<p>Laman ng file ang bersyon ng app mo, ang model ng phone mo, ang iniulat ng sasakyan tungkol sa sarili nito, kung aling adapter ang ginamit mo, at ang mga scan log na iyon. <strong>Wala rito ang VIN mo</strong>, ang pangalan mo, ang email mo, o ang lokasyon mo. Tinatanggal ang mga VIN habang isinusulat ang mga log at muli habang binubuo ang file.</p>
+<p><strong>Bakit ito hinihingi:</strong> Nasubukan ang ScanBuddy sa maliit na bilang ng OBD2 adapter, at daan-daan ang iba't ibang klase na ibinebenta. Ang log ng talagang ginawa ng adapter mo ang tanging maaasahang paraan para maayos ang problema sa hardware na hindi pag-aari ng developer.</p>
+<p><strong>Pagbura sa mga ito:</strong> nabubura ang mga scan log kasama ng lahat ng iba pa sa <strong>Iba pa → I-clear ang mga naka-save na report</strong>, at hindi kailanman nagtatabi ang app ng higit sa huling lima.</p>
+<div class="page-break"></div>
+<h2 id="ang-hindi-ginagawa-ng-scanbuddy">Ang hindi ginagawa ng ScanBuddy</h2>
+<ul><li><strong>Walang account at walang sign-in.</strong> Walang kailangang i-register.</li><li><strong>Walang analytics.</strong> Walang istatistika ng paggamit, walang pag-track ng mga event, walang pag-record ng session.</li><li><strong>Walang crash reporting.</strong> Walang ipinapadala kapag pumalya ang app.</li><li><strong>Walang advertising.</strong> Walang advertising SDK ang ScanBuddy, hindi ito nagpapakita ng mga ad, at hindi ito humihingi ng advertising identifier. May advertising component na tinanggal noong Agosto 2026, at wala nang natitirang bahagi nito.</li><li><strong>Walang lokasyon.</strong> Hindi humihingi ang ScanBuddy ng location permission at hindi ito gumagamit ng lokasyon. Idineklara ang pag-scan nito sa Bluetooth bilang hindi kailanman ginagamit para matukoy ang lokasyon.</li><li><strong>Walang pagbebenta o pagbabahagi ng personal na impormasyon.</strong> Walang sinumang mapagbebentahan nito.</li></ul>
+<div class="page-break"></div>
+<h2 id="mga-permission-at-para-saan-ang-bawat-isa">Mga permission, at para saan ang bawat isa</h2>
+<table><thead><tr><th>Permission</th><th>Bakit</th></tr></thead><tbody><tr><td>Bluetooth (kumonekta at mag-scan)</td><td>Para mahanap at makausap ang OBD2 adapter mo. Idineklarang hindi kailanman ginagamit para sa lokasyon</td></tr><tr><td>Internet</td><td>Ang paghahanap ng pangalan ng sasakyan sa NHTSA, at ang search na ni-tap mo. Ibinibigay ang mga attachment sa ibang app, hindi ina-upload ng ScanBuddy</td></tr><tr><td>Pag-vibrate</td><td>Feedback kapag pinindot ang button</td></tr><tr><td>Mga in-app purchase</td><td>Ang opsyonal na tip. Ang Google Play ang humahawak sa bayad; hindi kailanman nakikita ng ScanBuddy ang card mo, ang pangalan mo, o ang billing address mo</td></tr><tr><td>Status ng koneksyon sa network</td><td>Idinagdag ng billing library ng Google, na tumitingin kung online ka bago magbukas ng pagbabayad</td></tr><tr><td>Mga notification</td><td>Ang paalala sa adapter (Beta), kung i-on mo lang ito. Ipinapakita ng notification ang countdown at isang button para itigil ito</td></tr><tr><td>Foreground service (konektadong device)</td><td>Pinapatuloy ang countdown, sirena, at vibration ng paalala sa adapter kapag umalis ka sa app o ni-lock mo ang phone. Tinitingnan lang nito sa Bluetooth kung nandiyan pa ang adapter, at hindi kailanman nakikipag-usap sa sasakyan</td></tr><tr><td>Panatilihing gising ang phone</td><td>Habang nagka-countdown lang ang isang paalala sa adapter</td></tr></tbody></table>
+<p>Wala nang ibang permission na hinihingi ang ScanBuddy.</p>
+<div class="page-break"></div>
+<h2 id="pagbibigay-ng-tip">Pagbibigay ng tip</h2>
+<p>Libre ang ScanBuddy, at mananatili itong libre. Gumagana ang bawat feature nang walang binabayaran, at walang anumang naka-lock na kailangan pa ng tip.</p>
+<p>May opsyonal na tip button ang card na <strong>Mga paraan para sumuporta</strong>. Kung gagamitin mo ito, <strong>ang Google Play ang humahawak sa buong pagbabayad</strong>. Hindi kailanman nakikita ng ScanBuddy ang card number mo, ang billing address mo, ang pangalan mo, o ang email mo, at hindi ito kailanman nag-iimbak ng resibo.</p>
+<p>Ang ibinabalik lang ng Google sa app ay kung aling halaga ng tip ang pinili mo at kung natuloy ito — sapat para makapagpasalamat, at wala nang iba. Hindi ito naka-link sa iyo, hindi ito ipinapadala kahit saan, at hindi ito isinusulat sa mga scan log na ipinaliwanag sa itaas.</p>
+<p>Kung hindi mo ito kailanman i-tap, walang anumang nangyayari tungkol sa pagbabayad.</p>
+<div class="page-break"></div>
+<h2 id="mga-bata">Mga bata</h2>
+<p>Ang ScanBuddy ay isang tool para sa sasakyan at hindi ito nakatuon sa mga bata. Hindi ito sadyang nangongolekta ng impormasyon mula kaninuman, anuman ang edad.</p>
+<div class="page-break"></div>
+<h2 id="mga-pagbabago-sa-patakarang-ito">Mga pagbabago sa patakarang ito</h2>
+<p>Kung magbago ang ginagawa ng app, magbabago rin ang page na ito, at maa-update ang petsa sa itaas. Ang bersyon ng patakarang ito na sumasaklaw sa iyo ay ang nakalathala rito.</p>
+<div class="page-break"></div>
+<h2 id="makipag-ugnayan">Makipag-ugnayan</h2>
+<p>Mga tanong, pagtatama, o request tungkol sa data mo:</p>
+<p><strong>scanbuddy.obd@gmail.com</strong></p>
+<p>Puwede kang sumulat sa Filipino: binabasa ang mga mensahe sa tulong ng isang awtomatikong translator.</p>
+<p>Dahil walang hawak ang ScanBuddy na anumang tungkol sa iyo sa kahit anong server, ang sagot sa isang request na magbura ay ang pagsasabi sa iyo kung paano ito i-clear mula sa sarili mong phone — <strong>Iba pa → I-clear ang mga naka-save na report</strong>, o ang pag-uninstall ng app.</p>
+<p>Kung nag-email ka na ng ulat ng problema na may naka-attach na diagnostic data at gusto mo itong ipabura, sabihin mo lang sa address sa itaas at buburahin ito mula sa inbox na iyon.</p>
+</main>
+</body>
+</html>

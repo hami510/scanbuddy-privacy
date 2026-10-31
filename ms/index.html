@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dasar Privasi ScanBuddy OBD2</title>
+<meta name="description" content="Apa yang ScanBuddy OBD2 lakukan dengan maklumat anda.">
+<link rel="alternate" hreflang="en" href="../">
+<link rel="alternate" hreflang="es" href="../es/">
+<link rel="alternate" hreflang="pt-BR" href="../pt/">
+<link rel="alternate" hreflang="zh-Hans" href="../zh-Hans/">
+<link rel="alternate" hreflang="fil" href="../fil/">
+<link rel="alternate" hreflang="vi" href="../vi/">
+<link rel="alternate" hreflang="fr" href="../fr/">
+<link rel="alternate" hreflang="ko" href="../ko/">
+<link rel="alternate" hreflang="hi" href="../hi/">
+<link rel="alternate" hreflang="ht" href="../ht/">
+<link rel="alternate" hreflang="id" href="../id/">
+<link rel="alternate" hreflang="it" href="../it/">
+<link rel="alternate" hreflang="de" href="../de/">
+<link rel="alternate" hreflang="tr" href="../tr/">
+<link rel="alternate" hreflang="nl" href="../nl/">
+<link rel="alternate" hreflang="ja" href="../ja/">
+<link rel="alternate" hreflang="ru" href="../ru/">
+<link rel="alternate" hreflang="pl" href="../pl/">
+<link rel="alternate" hreflang="ro" href="../ro/">
+<link rel="alternate" hreflang="ms" href="../ms/">
+<link rel="alternate" hreflang="uk" href="../uk/">
+<link rel="alternate" hreflang="zh-Hant" href="../zh-Hant/">
+<link rel="alternate" hreflang="cs" href="../cs/">
+<link rel="alternate" hreflang="th" href="../th/">
+<link rel="alternate" hreflang="fa" href="../fa/">
+<link rel="alternate" hreflang="ar" href="../ar/">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --surface: #f6f8f7;
+    --text: #10181f;
+    --muted: #4a5560;
+    --line: #d8e0dc;
+    --accent: #0f7a4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1116;
+      --surface: #161b22;
+      --text: #e6edf3;
+      --muted: #9aa6b2;
+      --line: #2a323b;
+      --accent: #4ade80;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 20px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 40px 0 10px; padding-top: 4px; }
+  h3 { font-size: 1.08rem; margin: 28px 0 8px; color: var(--accent); }
+  p, li { color: var(--muted); }
+  strong { color: var(--text); }
+  a { color: var(--accent); }
+  code {
+    padding: 2px 6px;
+    border-radius: 5px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9em;
+    overflow-wrap: anywhere;
+  }
+  hr { margin: 36px 0; border: 0; border-top: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+  th, td { padding: 10px 12px; border: 1px solid var(--line); text-align: start; vertical-align: top; }
+  th { background: var(--surface); color: var(--text); }
+  td { color: var(--muted); }
+  /* A wide table must scroll inside itself, never push the page sideways. */
+  .table-wrap { overflow-x: auto; }
+  .langs { margin: 0 0 24px; font-size: 0.95rem; color: var(--muted); }
+  .langs span { color: var(--text); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+<nav class="langs" aria-label="Language"><a href="../" lang="en" hreflang="en">English</a> · <a href="../es/" lang="es" hreflang="es">Español</a> · <a href="../pt/" lang="pt-BR" hreflang="pt-BR">Português</a> · <a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> · <a href="../fil/" lang="fil" hreflang="fil">Filipino</a> · <a href="../vi/" lang="vi" hreflang="vi">Tiếng Việt</a> · <a href="../fr/" lang="fr" hreflang="fr">Français</a> · <a href="../ko/" lang="ko" hreflang="ko">한국어</a> · <a href="../hi/" lang="hi" hreflang="hi">हिन्दी</a> · <a href="../ht/" lang="ht" hreflang="ht">Kreyòl ayisyen</a> · <a href="../id/" lang="id" hreflang="id">Bahasa Indonesia</a> · <a href="../it/" lang="it" hreflang="it">Italiano</a> · <a href="../de/" lang="de" hreflang="de">Deutsch</a> · <a href="../tr/" lang="tr" hreflang="tr">Türkçe</a> · <a href="../nl/" lang="nl" hreflang="nl">Nederlands</a> · <a href="../ja/" lang="ja" hreflang="ja">日本語</a> · <a href="../ru/" lang="ru" hreflang="ru">Русский</a> · <a href="../pl/" lang="pl" hreflang="pl">Polski</a> · <a href="../ro/" lang="ro" hreflang="ro">Română</a> · <span aria-current="page">Bahasa Melayu</span> · <a href="../uk/" lang="uk" hreflang="uk">Українська</a> · <a href="../zh-Hant/" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a> · <a href="../cs/" lang="cs" hreflang="cs">Čeština</a> · <a href="../th/" lang="th" hreflang="th">ไทย</a> · <a href="../fa/" lang="fa" hreflang="fa">فارسی</a> · <a href="../ar/" lang="ar" hreflang="ar">العربية</a></nav>
+<h1 id="dasar-privasi-scanbuddy-obd2" class="chapter-title">Dasar Privasi ScanBuddy OBD2</h1>
+<p><strong>Kemas kini terakhir: 30 Oktober 2026</strong></p>
+<p><em>Ini ialah terjemahan. Jika terdapat sebarang perbezaan, versi bahasa Inggeris yang terpakai.</em></p>
+<p>ScanBuddy ialah alat imbasan OBD2 untuk Android. Ia membaca apa yang telah direkodkan oleh kenderaan anda — lampu check engine, monitor pelepasan, kod kerosakan dan nilai penderia langsung — dan memaparkannya kepada anda.</p>
+<p>ScanBuddy tiada akaun, tiada log masuk dan tiada pelayan sendiri. Imbasan anda disimpan di telefon anda.</p>
+<p>Empat perkara boleh keluar dari telefon anda, semuanya diterangkan di bawah. Satu daripadanya boleh anda matikan. Tiga yang lain hanya berlaku apabila anda mengetik butang yang menyatakannya.</p>
+<div class="page-break"></div>
+<h2 id="apa-yang-kekal-di-telefon-anda">Apa yang kekal di telefon anda</h2>
+<p>Semua yang direkodkan oleh ScanBuddy disimpan dalam storan aplikasi di telefon anda dan tidak dihantar ke mana-mana:</p>
+<ul><li><strong>Imbasan yang disimpan</strong> — butiran kenderaan, kod kerosakan, monitor pelepasan, bacaan langsung dan masa imbasan dibuat.</li><li><strong>Tetapan anda</strong> — bahasa, penampilan, unit, pilihan privasi anda dan, jika anda menetapkannya, negeri yang pemeriksaan pelepasannya ingin anda jadikan rujukan bagi penjelasan, serta bahasa yang anda mahu untuk penjelasan.</li><li><strong>Cache nama kenderaan</strong>, supaya kenderaan yang sama tidak dicari dua kali. Ia disimpan di bawah cincangan sehala, bukan VIN itu sendiri, dan entri yang disimpan tidak mengandungi VIN.</li><li><strong>Log imbasan</strong> — rekod ringkas lima imbasan terakhir, diterangkan dalam bahagian 4 di bawah.</li></ul>
+<p>Menyahpasang aplikasi akan membuang kesemuanya. Anda juga boleh memadamnya pada bila-bila masa melalui <strong>Lagi → Padam laporan tersimpan</strong>, yang memadam imbasan yang disimpan, cache nama kenderaan dan log imbasan sekali gus.</p>
+<div class="page-break"></div>
+<h2 id="apa-yang-boleh-keluar-dari-telefon-anda">Apa yang boleh keluar dari telefon anda</h2>
+<h3 id="1-vin-anda-dihantar-kepada-nhtsa-untuk-mendapatkan-nama-kenderaan">1. VIN anda, dihantar kepada NHTSA, untuk mendapatkan nama kenderaan</h3>
+<p>Apabila kenderaan melaporkan VINnya, ScanBuddy boleh menghantar VIN itu ke pangkalan data kenderaan awam milik National Highway Traffic Safety Administration (NHTSA) Amerika Syarikat untuk memaparkan tahun, jenama dan model:</p>
+<p><code>https://vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/</code></p>
+<p>Hanya VIN yang dihantar. Tiada data imbasan lain yang disertakan bersamanya, dan tiada apa-apa yang mengenal pasti anda atau telefon anda.</p>
+<p><strong>Jika rantau telefon anda ditetapkan kepada Amerika Syarikat atau wilayah AS, ciri ini dihidupkan secara lalai. Di semua negara lain, ia dimatikan pada mulanya.</strong> Anda boleh menghidupkan atau mematikannya di <strong>Lagi → Carian maklumat kenderaan</strong>. Apabila ia dimatikan, tiada VIN yang pernah keluar dari telefon anda, dan ScanBuddy memaparkan apa sahaja nama yang dilaporkan oleh kenderaan itu sendiri.</p>
+<p>NHTSA ialah agensi kerajaan AS dan pengendalian permintaan itu tertakluk pada dasarnya sendiri, bukan dasar ini.</p>
+<h3 id="2-carian-web-apabila-anda-mengetik-butang-yang-memintanya">2. Carian web, apabila anda mengetik butang yang memintanya</h3>
+<p>Beberapa skrin menyediakan butang <strong>&quot;Cari&quot;</strong> — di sebelah kod kerosakan, di sebelah monitor pelepasan dan di sebelah tolok langsung. Mengetiknya akan membuka carian web dalam pelayar anda. Setiap butang menyatakannya di bawahnya, dengan perkataan seperti &quot;Membuka carian tentang monitor kenderaan ini&quot;.</p>
+<p>Carian itu mengandungi kod kerosakan, monitor atau tolok yang anda ketik, bersama tahun, jenama, model, enjin dan jenis bahan api kenderaan; kod kerosakan lain dan monitor pelepasan daripada imbasan yang sama; bacaan yang direkodkan oleh kereta semasa kod itu dicetuskan; jarak dan kitaran pemanasan enjin sejak kod terakhir dipadam; dan sama ada lampu check engine menyala. Jika anda telah menetapkan negeri pemeriksaan atau bahasa untuk penjelasan dalam <strong>Lagi</strong>, maklumat itu turut disertakan. <strong>VIN anda tidak pernah dimasukkan dalam carian itu.</strong></p>
+<p>Tiada apa-apa yang dihantar sehingga anda mengetik. Jika anda tidak pernah mengetik mana-mana butang itu, tiada carian yang pernah dibuat.</p>
+<h3 id="3-apa-sahaja-yang-anda-pilih-untuk-dikongsi">3. Apa sahaja yang anda pilih untuk dikongsi</h3>
+<p>Butang kongsi membina laporan — sebagai teks, gambar atau kedua-duanya — dan menyerahkannya kepada menu kongsi Android. Anda yang memilih ke mana ia pergi; ScanBuddy tidak menghantarnya ke mana-mana dengan sendiri.</p>
+<p><strong>Secara lalai, VIN disembunyikan sebahagiannya dalam laporan yang dikongsi</strong> (<code>ABC**********1234</code>). Anda boleh mengubahnya di <strong>Lagi → Privasi VIN</strong>, dan tetapan itu terpakai pada kedua-dua teks dan gambar.</p>
+<h3 id="4-data-diagnostik-jika-anda-melampirkannya-pada-laporan-masalah">4. Data diagnostik, jika anda melampirkannya pada laporan masalah</h3>
+<p>ScanBuddy menyimpan log ringkas bagi setiap satu daripada <strong>lima imbasan terakhir</strong> anda — arahan yang dihantarnya ke penyesuai OBD2 anda dan apa yang diterima kembali, serta bagaimana sambungan berjalan. Log ini kekal di telefon anda dan tidak pernah dihantar dengan sendiri.</p>
+<p>Apabila anda mengetik <strong>Lagi → Laporkan masalah</strong>, ScanBuddy bertanya sama ada anda mahu menghantarnya. Anda boleh melampirkan imbasan terakhir, melampirkan beberapa imbasan terakhir, atau memilih <strong>&quot;Tulis mesej sahaja&quot;</strong>, yang tidak melampirkan sebarang log imbasan langsung. Ia bertanya setiap kali; tiada tetapan yang mengingati jawapan ya.</p>
+<p>Apa pun pilihan anda, e-mel itu sendiri membawa lima baris supaya ia dapat difahami semasa dibalas: versi aplikasi anda, model telefon anda, tahun, jenama dan model kenderaan anda, sama ada penyesuai bersambung, dan sebarang kod kerosakan. Anda boleh memadam baris-baris itu sebelum menghantar.</p>
+<p>Jika anda melampirkannya, log itu dikumpulkan ke dalam satu fail teks yang boleh anda buka dan baca, dan satu e-mel dibuka untuk anda, dialamatkan kepada alamat sokongan di bawah, dengan fail itu dilampirkan. <strong>Tiada apa-apa yang dihantar sehingga anda menghantarnya.</strong> Anda memilih aplikasi e-mel yang hendak digunakan, anda boleh membaca atau memadam lampiran terlebih dahulu, dan anda boleh menutup e-mel itu tanpa menghantarnya.</p>
+<p>Fail itu mengandungi versi aplikasi anda, model telefon anda, apa yang dilaporkan oleh kenderaan tentang dirinya, penyesuai yang anda gunakan dan log imbasan tersebut. <strong>Ia tidak mengandungi VIN anda</strong>, nama anda, e-mel anda atau lokasi anda. VIN dibuang semasa log ditulis dan sekali lagi semasa fail dibina.</p>
+<p><strong>Mengapa ia diminta:</strong> ScanBuddy telah diuji dengan sebilangan kecil penyesuai OBD2, sedangkan terdapat ratusan jenis yang berbeza dijual. Log tentang apa yang benar-benar dilakukan oleh penyesuai anda ialah satu-satunya cara yang boleh dipercayai untuk membetulkan masalah pada perkakasan yang tidak dimiliki oleh pembangun.</p>
+<p><strong>Memadamnya:</strong> log imbasan dipadam bersama semua yang lain di <strong>Lagi → Padam laporan tersimpan</strong>, dan aplikasi tidak pernah menyimpan lebih daripada lima yang terakhir.</p>
+<div class="page-break"></div>
+<h2 id="apa-yang-scanbuddy-tidak-lakukan">Apa yang ScanBuddy tidak lakukan</h2>
+<ul><li><strong>Tiada akaun dan tiada log masuk.</strong> Tiada apa-apa untuk didaftarkan.</li><li><strong>Tiada analitik.</strong> Tiada statistik penggunaan, tiada penjejakan peristiwa, tiada rakaman sesi.</li><li><strong>Tiada laporan ranap.</strong> Tiada apa-apa dihantar apabila aplikasi gagal.</li><li><strong>Tiada pengiklanan.</strong> ScanBuddy tidak mengandungi SDK pengiklanan, tidak memaparkan iklan dan tidak meminta pengecam pengiklanan. Satu komponen pengiklanan telah dibuang pada Ogos 2026 dan tiada sebarang bahagiannya yang tinggal.</li><li><strong>Tiada lokasi.</strong> ScanBuddy tidak meminta kebenaran lokasi dan tidak menggunakan lokasi. Imbasan Bluetooth oleh ScanBuddy diisytiharkan sebagai tidak pernah digunakan untuk menentukan lokasi.</li><li><strong>Tiada penjualan atau perkongsian maklumat peribadi.</strong> Tiada penerima untuk menjualnya.</li></ul>
+<div class="page-break"></div>
+<h2 id="kebenaran-dan-kegunaan-setiap-satunya">Kebenaran, dan kegunaan setiap satunya</h2>
+<table><thead><tr><th>Kebenaran</th><th>Sebab</th></tr></thead><tbody><tr><td>Bluetooth (sambung dan imbas)</td><td>Untuk mencari dan berhubung dengan penyesuai OBD2 anda. Diisytiharkan sebagai tidak pernah digunakan untuk lokasi</td></tr><tr><td>Internet</td><td>Carian nama kenderaan NHTSA, dan carian yang anda mulakan dengan mengetik butang. Lampiran diserahkan kepada aplikasi lain, bukan dimuat naik oleh ScanBuddy</td></tr><tr><td>Getaran</td><td>Maklum balas butang</td></tr><tr><td>Pembelian dalam aplikasi</td><td>Tip pilihan. Google Play mengendalikan pembayaran; ScanBuddy tidak pernah melihat kad anda, nama anda atau alamat pengebilan anda</td></tr><tr><td>Keadaan sambungan rangkaian</td><td>Ditambah oleh pustaka pengebilan Google, yang menyemak sama ada anda dalam talian sebelum membuka pembayaran</td></tr><tr><td>Pemberitahuan</td><td>Pengingat penyesuai (Beta), hanya jika anda menghidupkannya. Pemberitahuan itu menunjukkan kiraan detik dan butang untuk menghentikannya</td></tr><tr><td>Perkhidmatan latar depan (peranti bersambung)</td><td>Mengekalkan kiraan detik, siren dan getaran pengingat penyesuai apabila anda keluar dari aplikasi atau mengunci telefon. Ia hanya menyemak melalui Bluetooth sama ada penyesuai masih ada, dan tidak pernah berhubung dengan kenderaan</td></tr><tr><td>Kekalkan telefon berjaga</td><td>Hanya semasa pengingat penyesuai sedang membuat kiraan detik</td></tr></tbody></table>
+<p>ScanBuddy tidak meminta sebarang kebenaran lain.</p>
+<div class="page-break"></div>
+<h2 id="memberi-tip">Memberi tip</h2>
+<p>ScanBuddy percuma, dan akan kekal percuma. Setiap ciri berfungsi tanpa perlu membayar apa-apa, dan tiada apa-apa yang dikunci di sebalik tip.</p>
+<p>Kad sokongan mempunyai butang tip pilihan. Jika anda menggunakannya, <strong>Google Play mengendalikan keseluruhan pembayaran</strong>. ScanBuddy tidak pernah melihat nombor kad anda, alamat pengebilan anda, nama anda atau e-mel anda, dan ia tidak pernah menyimpan resit.</p>
+<p>Apa yang Google kembalikan kepada aplikasi hanyalah jumlah tip yang anda pilih dan sama ada ia berjaya — cukup untuk mengucapkan terima kasih, dan tidak lebih daripada itu. Maklumat itu tidak dikaitkan dengan anda, tidak dihantar ke mana-mana dan tidak ditulis ke dalam log imbasan yang diterangkan di atas.</p>
+<p>Jika anda tidak pernah mengetiknya, tiada apa-apa berkaitan pembayaran yang berlaku langsung.</p>
+<div class="page-break"></div>
+<h2 id="kanak-kanak">Kanak-kanak</h2>
+<p>ScanBuddy ialah alat kenderaan dan tidak ditujukan kepada kanak-kanak. Ia tidak dengan sengaja mengumpul maklumat daripada sesiapa pun, dalam apa jua lingkungan umur.</p>
+<div class="page-break"></div>
+<h2 id="perubahan-pada-dasar-ini">Perubahan pada dasar ini</h2>
+<p>Jika apa yang dilakukan oleh aplikasi berubah, halaman ini berubah bersamanya, dan tarikh di bahagian atas dikemas kini. Versi dasar ini yang terpakai kepada anda ialah versi yang diterbitkan di sini.</p>
+<div class="page-break"></div>
+<h2 id="hubungi">Hubungi</h2>
+<p>Soalan, pembetulan atau permintaan mengenai data anda:</p>
+<p><strong>scanbuddy.obd@gmail.com</strong></p>
+<p>Anda boleh menulis dalam bahasa Melayu: mesej dibaca dengan bantuan penterjemah mesin.</p>
+<p>Oleh sebab ScanBuddy tidak menyimpan apa-apa tentang anda di mana-mana pelayan, permintaan pemadaman dijawab dengan memberitahu anda cara memadamnya daripada telefon anda sendiri — <strong>Lagi → Padam laporan tersimpan</strong>, atau menyahpasang aplikasi.</p>
+<p>Jika anda sudah menghantar laporan masalah melalui e-mel dengan data diagnostik dilampirkan dan mahu ia dipadam, maklumkan melalui alamat di atas dan ia akan dipadam daripada peti masuk itu.</p>
+</main>
+</body>
+</html>
