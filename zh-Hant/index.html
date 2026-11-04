@@ -73,6 +73,10 @@
     color: var(--text);
     font-size: 0.9em;
     overflow-wrap: anywhere;
+    /* Addresses and masked VINs are always left to right. On the ar and fa
+       pages the bidi algorithm drew the NHTSA address's trailing "/" first. */
+    direction: ltr;
+    unicode-bidi: isolate;
   }
   hr { margin: 36px 0; border: 0; border-top: 1px solid var(--line); }
   table { width: 100%; border-collapse: collapse; margin: 16px 0; }
@@ -89,11 +93,15 @@
 <main>
 <nav class="langs" aria-label="Language"><a href="../" lang="en" hreflang="en">English</a> · <a href="../es/" lang="es" hreflang="es">Español</a> · <a href="../pt/" lang="pt-BR" hreflang="pt-BR">Português</a> · <a href="../zh-Hans/" lang="zh-Hans" hreflang="zh-Hans">简体中文</a> · <a href="../fil/" lang="fil" hreflang="fil">Filipino</a> · <a href="../vi/" lang="vi" hreflang="vi">Tiếng Việt</a> · <a href="../fr/" lang="fr" hreflang="fr">Français</a> · <a href="../ko/" lang="ko" hreflang="ko">한국어</a> · <a href="../hi/" lang="hi" hreflang="hi">हिन्दी</a> · <a href="../ht/" lang="ht" hreflang="ht">Kreyòl ayisyen</a> · <a href="../id/" lang="id" hreflang="id">Bahasa Indonesia</a> · <a href="../it/" lang="it" hreflang="it">Italiano</a> · <a href="../de/" lang="de" hreflang="de">Deutsch</a> · <a href="../tr/" lang="tr" hreflang="tr">Türkçe</a> · <a href="../nl/" lang="nl" hreflang="nl">Nederlands</a> · <a href="../ja/" lang="ja" hreflang="ja">日本語</a> · <a href="../ru/" lang="ru" hreflang="ru">Русский</a> · <a href="../pl/" lang="pl" hreflang="pl">Polski</a> · <a href="../ro/" lang="ro" hreflang="ro">Română</a> · <a href="../ms/" lang="ms" hreflang="ms">Bahasa Melayu</a> · <a href="../uk/" lang="uk" hreflang="uk">Українська</a> · <span aria-current="page">繁體中文</span> · <a href="../cs/" lang="cs" hreflang="cs">Čeština</a> · <a href="../th/" lang="th" hreflang="th">ไทย</a> · <a href="../fa/" lang="fa" hreflang="fa">فارسی</a> · <a href="../ar/" lang="ar" hreflang="ar">العربية</a></nav>
 <h1 id="scanbuddy-obd2" class="chapter-title">ScanBuddy OBD2 隱私權政策</h1>
-<p><strong>最後更新：2026 年 10 月 30 日</strong></p>
+<p><strong>最後更新：2026 年 11 月 3 日</strong></p>
 <p><em>這是翻譯版本。如果與英文版本有任何不一致，以英文版本為準。</em></p>
 <p>ScanBuddy 是一款 Android 上的 OBD2 掃描工具。它會讀取你的車輛已經記錄下來的資訊——引擎故障燈、排放監測項目、故障碼和即時感測器數值——並顯示給你看。</p>
 <p>ScanBuddy 沒有帳號、不用登入，也沒有自己的伺服器。你的掃描紀錄儲存在你的手機上。</p>
 <p>有四樣東西可能會離開你的手機，下文會逐一說明。其中一樣你可以關閉。另外三樣只有在你點按明確寫著會這麼做的按鈕時才會發生。</p>
+<div class="page-break"></div>
+<h2 id="">負責方</h2>
+<p>ScanBuddy 由美國加州的一位個人開發者製作，並以開發者名稱 ScanBuddy 發布在 Google Play 上。這位開發者對本頁所述的個人資料負責。</p>
+<p>聯絡方式：<strong>scanbuddy.obd@gmail.com</strong>。此信箱也是處理巴西 LGPD 相關請求的聯絡管道。</p>
 <div class="page-break"></div>
 <h2 id="">留在你手機上的內容</h2>
 <p>ScanBuddy 記錄的所有內容都存放在你手機上的應用程式儲存空間裡，不會傳送到任何地方：</p>
@@ -108,7 +116,8 @@
 <p><strong>如果你的手機地區設定為美國或美國屬地，此功能預設為開啟；在其他所有國家/地區，此功能預設為關閉</strong>。你可以在<strong>更多 → 車輛資訊查詢</strong>中開啟或關閉它。關閉後，任何 VIN 都不會離開你的手機，ScanBuddy 會顯示車輛自己回報的名稱。</p>
 <p>NHTSA 是美國政府機構，它如何處理該請求受其本身的政策規範，而不受本政策規範。</p>
 <h3 id="2">2. 網頁搜尋：當你點按要求進行搜尋的按鈕時</h3>
-<p>有好幾個畫面都提供「<strong>查詢</strong>」按鈕：在故障碼旁邊、排放監測項目旁邊，以及即時儀表旁邊。點按它會在你的瀏覽器中開啟一次網頁搜尋。每個按鈕下方都會說明這一點，用語類似「開啟關於這輛車排放監測項目的搜尋」。</p>
+<p>有好幾個畫面都提供「<strong>查詢</strong>」按鈕：在故障碼旁邊、排放監測項目旁邊，以及即時儀表旁邊。點按它會在你的瀏覽器中開啟一次網頁搜尋。每個按鈕下方都會說明這一點，用語類似「會開啟搜尋，查詢這輛車的排放監測項目」。</p>
+<p>這次搜尋是 Google 搜尋，因此 Google 會收到它，並依 Google 自己的隱私權政策處理。</p>
 <p>該搜尋包含你點按的故障碼、排放監測項目或儀表，以及車輛的年份、品牌、車型、引擎和燃料類型；同一次掃描中的其他故障碼和排放監測項目；故障碼產生時車輛記錄下的讀數；自上次清除故障碼以來的行駛距離和暖車循環次數；以及引擎故障燈是否亮起。如果你在<strong>更多</strong>中設定了排氣檢驗所在的州或說明使用的語言，這些也會一併包含在內。<strong>你的 VIN 絕不會包含在該搜尋中。</strong></p>
 <p>在你點按之前，不會傳送任何內容。如果你從不點按這些按鈕，就永遠不會進行任何搜尋。</p>
 <h3 id="3">3. 你選擇分享的任何內容</h3>
@@ -117,24 +126,41 @@
 <h3 id="4">4. 診斷資料：如果你把它附加到問題回報中</h3>
 <p>ScanBuddy 會為你的<strong>最近五次掃描</strong>各保留一份簡短日誌：它傳送給你的 OBD2 轉接器的指令和收到的回覆，以及連線的情況。這些日誌存放在你的手機上，絕不會自行傳送出去。</p>
 <p>當你點按<strong>更多 → 回報問題</strong>時，ScanBuddy 會詢問你是否要傳送這些日誌。你可以附加最近一次掃描、附加最近幾次掃描，或者選擇「<strong>只寫訊息</strong>」，這樣完全不會附加任何掃描日誌。它每次都會詢問；沒有任何設定會記住你的同意。</p>
-<p>無論你選擇哪一項，郵件本身都會帶有五行資訊，讓回覆的人能看懂情況：你的應用程式版本、你的手機型號、你車輛的年份、品牌和車型、轉接器是否已連線，以及任何故障碼。你可以在傳送前刪除這些行。</p>
+<p>選擇「<strong>只寫訊息</strong>」時，郵件主旨會帶有五項資訊，讓回覆的人能看懂情況：你的應用程式版本、你的手機型號、你車輛的年份、品牌和車型、轉接器是否已連線，以及任何故障碼。如果你附加了掃描日誌，郵件主旨仍帶有同樣的五項資訊，其餘內容放在檔案裡。你可以在傳送前刪除其中任何內容。</p>
 <p>如果你確實附加了日誌，它們會被彙整成一個你可以開啟閱讀的文字檔，接著會為你開啟一封郵件，收件人是下方的客服信箱，並附上該檔案。<strong>在你自己傳送之前，什麼都不會送出</strong>。你可以選擇要用哪個郵件應用程式，可以先閱讀或刪除附件，也可以不傳送就關閉郵件。</p>
-<p>該檔案包含你的應用程式版本、你的手機型號、車輛回報的關於它自身的資訊、你使用的轉接器，以及上述掃描日誌。<strong>它不包含你的 VIN</strong>、你的姓名、你的電子郵件地址或你的位置。日誌寫入時會移除 VIN，產生檔案時還會再移除一次。</p>
+<p>該檔案包含你的應用程式版本、你的手機型號、掃描的時間、車輛回報的關於它自身的資訊、你使用的轉接器，以及上述掃描日誌。<strong>它不包含你的 VIN</strong>、你的姓名、你的電子郵件地址或你的位置。日誌寫入時會移除 VIN，產生檔案時還會再移除一次。</p>
 <p><strong>為什麼要請你提供</strong>：ScanBuddy 已在少數幾款 OBD2 轉接器上測試過，而市面上販售的轉接器有數百種。開發者手上沒有的硬體出了問題，唯一可靠的修正方法，就是一份記錄你的轉接器實際做了什麼的日誌。</p>
 <p><strong>如何刪除</strong>：在<strong>更多 → 清除已儲存的報告</strong>中，掃描日誌會和其他所有內容一起被清除；而且應用程式始終只保留最近五次掃描的日誌。</p>
 <div class="page-break"></div>
+<h2 id="">當你聯絡開發者時</h2>
+<p>如果你寄電子郵件到 scanbuddy.obd@gmail.com——無論是透過<strong>更多 → 回報問題</strong>，還是透過你自己的郵件應用程式——開發者會收到你的電子郵件地址、你的訊息，以及郵件所帶的內容（見上文第 4 節）。開發者只會用它來回覆你和修正問題。</p>
+<p>收件匣是一個 Gmail 帳號，所以 Google 會替開發者儲存你的郵件。</p>
+<p>開發者可能會使用 Anthropic 開發的 AI 助理 Claude 來閱讀客服郵件並草擬回覆。為此，Anthropic 會收到這封郵件，並依其本身的隱私權政策（anthropic.com/legal/privacy）處理。開發者已關閉允許 Anthropic 使用這些對話來訓練其 AI 的設定。AI 從不傳送任何內容：每一封回覆在寄出前都由開發者閱讀。</p>
+<p>你在 Google Play 上發表的評論是公開的。開發者會在 Google Play Console 中閱讀評論，並可能使用同一個 AI 助理閱讀評論並草擬回覆。</p>
+<p>郵件在問題未解決期間保存，問題結案後最多再保存 12 個月，然後刪除。你可以要求提前刪除。</p>
+<p><strong>這一切發生在哪裡</strong>。開發者、Google 和 Anthropic 都在美國，所以你的郵件在美國處理，即使你住在其他國家。Google 參與了 EU-U.S. Data Privacy Framework（歐盟-美國資料隱私框架）及其英國延伸，歐盟和英國認可該框架能保護傳送到美國的個人資料。Anthropic 依其本身的隱私權政策處理你的郵件；開發者與 Anthropic 之間沒有另外的資料保護合約。</p>
+<div class="page-break"></div>
 <h2 id="scanbuddy">ScanBuddy 不會做的事</h2>
-<ul><li><strong>沒有帳號，也不用登入</strong>。沒有任何需要註冊的東西。</li><li><strong>沒有分析統計</strong>。不收集使用統計、不追蹤事件、不錄製使用過程。</li><li><strong>沒有當機回報</strong>。應用程式出錯時不會傳送任何內容。</li><li><strong>沒有廣告</strong>。ScanBuddy 不包含任何廣告 SDK、不顯示廣告，也不要求廣告識別碼。一個廣告元件已於 2026 年 8 月移除，沒有留下它的任何部分。</li><li><strong>不使用位置</strong>。ScanBuddy 不要求位置權限，也不使用位置資訊。它的藍牙掃描已聲明為絕不用於推斷位置。</li><li><strong>不出售或分享個人資料</strong>。根本沒有可以賣給的接收者。</li></ul>
+<ul><li><strong>沒有帳號，也不用登入</strong>。沒有任何需要註冊的東西。</li><li><strong>沒有分析統計</strong>。不收集使用統計、不追蹤事件、不錄製使用過程。</li><li><strong>沒有當機回報</strong>。ScanBuddy 本身在出錯時不會傳送任何內容。如果你允許手機與 Google 分享使用情形和診斷資料，Android 可能會向 Google 回報當機，Google 會向開發者顯示應用程式當機的頻率，以及手機型號和 Android 版本。</li><li><strong>沒有廣告</strong>。ScanBuddy 不包含任何廣告 SDK、不顯示廣告，也不要求廣告識別碼。一個廣告元件已於 2026 年 8 月移除，沒有留下它的任何部分。</li><li><strong>不使用位置</strong>。ScanBuddy 不要求位置權限，也不使用位置資訊。它的藍牙掃描已聲明為絕不用於推斷位置。</li><li><strong>不出售個人資料</strong>，也不為廣告而分享任何內容。</li></ul>
 <div class="page-break"></div>
 <h2 id="">權限及其用途</h2>
-<table><thead><tr><th>權限</th><th>用途</th></tr></thead><tbody><tr><td>藍牙（連線和掃描）</td><td>用來尋找你的 OBD2 轉接器並與它通訊。已聲明為絕不用於定位</td></tr><tr><td>網際網路</td><td>NHTSA 車輛名稱查詢，以及你點按發起的搜尋。附件會交給其他應用程式，而不是由 ScanBuddy 上傳</td></tr><tr><td>震動</td><td>按鈕回饋</td></tr><tr><td>應用程式內購買</td><td>可選的小費。由 Google Play 處理付款；ScanBuddy 永遠看不到你的卡片、你的姓名或你的帳單地址</td></tr><tr><td>網路連線狀態</td><td>由 Google 的計費程式庫加入，它會在開啟付款前檢查你是否已連上網路</td></tr><tr><td>通知</td><td>轉接器提醒（測試版），僅在你開啟後使用。通知會顯示倒數和停止按鈕</td></tr><tr><td>前景服務（已連線裝置）</td><td>在你離開應用程式或鎖定手機後，讓轉接器提醒的倒數、警笛和震動繼續運作。它只透過藍牙檢查轉接器是否還在，從不與車輛通訊</td></tr><tr><td>保持手機喚醒</td><td>僅在轉接器提醒倒數期間</td></tr></tbody></table>
+<table><thead><tr><th>權限</th><th>用途</th></tr></thead><tbody><tr><td>藍牙（連線和掃描）</td><td>用來尋找你的 OBD2 轉接器並與它通訊。已聲明為絕不用於定位</td></tr><tr><td>網際網路</td><td>NHTSA 車輛名稱查詢，以及你點按發起的搜尋。附件會交給其他應用程式，而不是由 ScanBuddy 上傳</td></tr><tr><td>震動</td><td>按鈕回饋</td></tr><tr><td>應用程式內購買</td><td>可選的小費。由 Google Play 處理付款；應用程式永遠看不到你的卡片、你的姓名或你的帳單地址</td></tr><tr><td>網路連線狀態</td><td>由 Google 的計費程式庫加入，它會在開啟付款前檢查你是否已連上網路</td></tr><tr><td>通知</td><td>轉接器提醒（測試版），僅在你開啟後使用。通知會顯示倒數和停止按鈕</td></tr><tr><td>前景服務（已連線裝置）</td><td>在你離開應用程式或鎖定手機後，讓轉接器提醒的倒數、警笛和震動繼續運作。它只透過藍牙檢查轉接器是否還在，從不與車輛通訊</td></tr><tr><td>保持手機喚醒</td><td>僅在轉接器提醒倒數期間</td></tr></tbody></table>
 <p>ScanBuddy 不要求任何其他權限。</p>
 <div class="page-break"></div>
 <h2 id="">小費</h2>
 <p>ScanBuddy 是免費的，而且會一直免費。每項功能都不必付費就能使用，也沒有任何東西要給小費後才能使用。</p>
-<p>「支持方式」卡片上有一個可選的小費按鈕。如果你使用它，<strong>整個付款過程都由 Google Play 處理</strong>。ScanBuddy 永遠看不到你的卡號、你的帳單地址、你的姓名或你的電子郵件地址，也從不儲存收據。</p>
+<p>「支持方式」卡片上有一個可選的小費按鈕。如果你使用它，<strong>整個付款過程都由 Google Play 處理</strong>。應用程式永遠看不到你的卡號、你的帳單地址、你的姓名或你的電子郵件地址，也從不儲存收據。開發者從 Google 收到的資訊會在下文說明。</p>
 <p>Google 回傳給應用程式的只有你選了哪一種小費金額，以及付款是否成功——足夠用來說聲謝謝，僅此而已。這些資訊不會與你連結，不會被傳送到任何地方，也不會寫入上文所述的掃描日誌。</p>
+<p>開發者透過 Google Play Console 可以看到每筆小費的訂單編號、日期、金額和買家所在的國家/地區。Google 的月報也可能包含買家所在的州或地區、郵遞區號、城市以及所用的手機型號。開發者從不會看到你的姓名、電子郵件地址或卡片。這些資訊只用於記帳、稅務和退款。Google 在 Play Console 中保存這些紀錄，開發者為稅務而保留的任何副本，只保留到稅法要求的期限為止。</p>
 <p>如果你從不點按它，就完全不會發生任何與付款有關的事。</p>
+<div class="page-break"></div>
+<h2 id="">你的權利與法律依據</h2>
+<p><strong>每項用途的原因及法律依據（GDPR / UK GDPR Art. 6(1)(f)，LGPD Art. 7 IX - 合法利益）：</strong></p>
+<ul><li>VIN 查詢：用於在你開啟該功能時顯示車輛名稱。VIN 從你的手機直接傳送給 NHTSA；開發者永遠不會收到它。你可以關閉它。</li><li>「查詢」搜尋：用於回答你點按的問題。搜尋從你的手機直接傳送給 Google；開發者永遠不會收到它。</li><li>客服郵件和診斷日誌：用於回覆你並修正應用程式，包括使用 AI 助理閱讀這些內容並草擬回覆。這既符合你的利益，也符合開發者的利益。</li><li>小費紀錄：用於保存開發者必須保存的記帳和稅務紀錄，並處理退款。</li></ul>
+<p>你不必提供其中任何內容；每項會傳送資料的功能都是可選的，沒有它們應用程式也能正常使用。ScanBuddy 不會對你做出自動化決策，也不進行剖析。</p>
+<p><strong>反對的權利</strong>。你可以隨時反對上述任何用途。請寫信到 scanbuddy.obd@gmail.com，例如要求刪除你的客服郵件，或要求不使用 AI 助理來處理，開發者就會停止。唯一的例外是稅法要求開發者保留的小費紀錄。對於 VIN 查詢，你只需在<strong>更多 → 車輛資訊查詢</strong>中把它關閉即可。</p>
+<p><strong>你的其他權利</strong>。依你所在的地區，你可以要求查看、更正或刪除開發者所持有的關於你的資料，要求取得這些資料的副本、限制其使用，並要求了解這些資料曾與誰分享。在巴西，依據 LGPD Art. 18，你可以要求：確認你的資料是否被處理；存取；更正；對不必要或過量的資料進行匿名化、封鎖或刪除；資料可攜；刪除；以及它曾與誰分享。請寫信到 scanbuddy.obd@gmail.com。在稅法要求保留期間，小費紀錄無法刪除。你手機上的資料可以自行在<strong>更多 → 清除已儲存的報告</strong>中刪除。</p>
+<p><strong>申訴</strong>。你可以先向開發者申訴：scanbuddy.obd@gmail.com；申訴會在 30 天內確認收到。你也可以向你所在地的資料保護主管機關申訴：在歐盟，是你所在國家的機關；在英國，是 Information Commissioner's Office（英國資訊專員辦公室，ico.org.uk）；在巴西，是 ANPD（gov.br/anpd）。</p>
 <div class="page-break"></div>
 <h2 id="">兒童</h2>
 <p>ScanBuddy 是一款車輛工具，並非以兒童為對象。它不會在知情的情況下收集任何人（無論年齡）的資訊。</p>
@@ -145,9 +171,9 @@
 <h2 id="">聯絡方式</h2>
 <p>如有問題、更正，或關於你的資料的請求，請聯絡：</p>
 <p><strong>scanbuddy.obd@gmail.com</strong></p>
-<p>你可以用中文寫信：郵件會藉助機器翻譯來閱讀。</p>
-<p>由於 ScanBuddy 不在任何伺服器上保存任何關於你的資訊，對於刪除請求，回覆會告訴你如何從你自己的手機上清除這些資料：使用<strong>更多 → 清除已儲存的報告</strong>，或解除安裝應用程式。</p>
-<p>如果你已經透過電子郵件寄出附帶診斷資料的問題回報，並希望將它刪除，請寄信到上面的地址說明，它就會從那個收件匣中刪除。</p>
+<p>你可以用中文寫信：開發者會藉助上文提到的 AI 助理 Claude 來閱讀郵件。</p>
+<p>應用程式沒有伺服器，所以它儲存的內容都在你的手機上，你可以自己清除：<strong>更多 → 清除已儲存的報告</strong>，或解除安裝應用程式。</p>
+<p>如果你寄過電子郵件到客服信箱，你可以要求刪除那封郵件及其所有附件，或要求取得一份副本，請寄信到上面的地址。</p>
 </main>
 </body>
 </html>
